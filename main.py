@@ -1,7 +1,7 @@
 from fileinput import filename
 from pytube import YouTube
 
-link = input("Met le lien de la video:")
+link = input("Met le lien de la video:\n")
 yt = YouTube(link)
 
 downloader = yt.streams.get_highest_resolution()
